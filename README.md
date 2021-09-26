@@ -1,2 +1,2 @@
 "# InnovateCanada" 
-This website is to help people find opportunities.
+For now, this is only for 1920x1080
