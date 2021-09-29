@@ -131,7 +131,7 @@ ul.filters {
 input {
     font-size: 0.9em;
     line-height: 1.3em;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     color: #666666;
     border: none;
     border-radius: 3vw;
@@ -144,21 +144,45 @@ input:focus {
     outline: none;
 }
 
+/* other pages css */
+
+.side-page {
+    margin-top: 5vh;
+}
+
 .search-container {
     padding-left: 1vw;
-    max-width: 500px;
-    width: 80vw;
+    max-width: 600px;
+    width: 60vw;
+}
+
+.search-container h1 {
+    font-size: 1.5em;
+    
+}
+
+.search-container .search-widget input {
+    max-width: 650px;
+    width: 65vw;
+}
+
+.search-items {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 15px;
+    margin-top: 10px;
 }
 
 .search-items h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     float: left;
+    margin-top: 10px;
 }
 
 .search-items span {
     color: #666666;
     float: right;
-    margin-top: 3em;
+    margin-top: 15px;
     font-size: 0.7em;
 }
 
@@ -174,7 +198,7 @@ input:focus {
 }
 
 .search-items p  {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 a.tag {
