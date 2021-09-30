@@ -2,10 +2,17 @@ body {
     font-family: 'Urbanist', sans-serif;
     background: linear-gradient(90deg, #F2F2F2 34.77%, #F2F2F2 34.77%, rgba(242, 242, 242, 0) 100%);
     margin: 0;
-    padding-left: 7vw;
+    padding-left: 5vw;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 body.home-page {
+    padding-left: 7vw;
     padding-bottom: 10vh;
     height: 90vh;
 
@@ -78,8 +85,6 @@ ul.filters {
 }
 
 .filters a {
-    text-decoration: none;
-    color: black;
     list-style: none;
     font-family: Quicksand;
     font-style: normal;
@@ -116,15 +121,15 @@ ul.filters {
 }
 
 .filter1:hover .filter-underline1 {
-    background-color: cornflowerblue;
+    background-color: #7B9DD4;
 }
 
 .filter2:hover .filter-underline2 {
-    background-color: darkkhaki;
+    background-color: #FAE04B;
 }
 
 .filter3:hover .filter-underline3 {
-    background-color: indianred;
+    background-color: #D47B90;
 }
 
 
@@ -147,7 +152,7 @@ input:focus {
 /* other pages css */
 
 .side-page {
-    margin-top: 5vh;
+    margin-top: 4vh;
 }
 
 .search-container {
@@ -157,7 +162,7 @@ input:focus {
 }
 
 .search-container h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     
 }
 
@@ -174,7 +179,7 @@ input:focus {
 }
 
 .search-items h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     float: left;
     margin-top: 10px;
 }
@@ -183,7 +188,7 @@ input:focus {
     color: #666666;
     float: right;
     margin-top: 15px;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .search-items p {
@@ -198,18 +203,16 @@ input:focus {
 }
 
 .search-items p  {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 a.tag {
-    text-decoration: none;
     text-align: center;
     background-color: #D6E1F5;
     width: fit-content;
     height: fit-content;
     border-radius: 10px;
-    color: black;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: bolder;
     margin-right: 10.8px;
     padding: 4px 10px;
