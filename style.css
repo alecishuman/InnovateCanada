@@ -22,9 +22,25 @@ body.home-page {
     background-position: 80% center; picture deletes the gradient background thingy*/
 
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* image */
+
+.not-image {
+    display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+}
+
+.image-container {
+    width: 43vw;
+    background-image: url("img/randomimg.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 80%;
 }
 
 /* navbar */
@@ -60,7 +76,6 @@ body.home-page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .header-container {
@@ -153,6 +168,7 @@ input:focus {
 
 .side-page {
     margin-top: 4vh;
+    font-size: 0.9em;
 }
 
 .search-container {
@@ -174,7 +190,7 @@ input:focus {
 .search-items {
     background-color: white;
     border-radius: 15px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     margin-top: 10px;
 }
 
