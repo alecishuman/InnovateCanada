@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,60 +14,136 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>Scholarships</title>
 </head>
+
 <body>
     <div class="nav-container side-page">
         <div class="nav-item"><a href="opportunities.html">opportunities</a></div>
         <div class="nav-item"><a href="scholarships.html">scholarships</a></div>
         <div class="nav-item"><a href="internships.html">internships</a></div>
         <div class="nav-item"><a href="about.html">about us</a></div>
-        
+
     </div>
 
     <div class="search-container">
+        <div class="search-head">
+            <h1>Search Scholarships</h1>
+            <form class="search-widget">
+                <input type="text" placeholder="Search for..." id="searchBar" onkeyup="search_bar()" autocomplete="off">
+                <img src="img/search-button-overlay.svg" alt="search button" width="40vh">
+            </form>
+        </div>
 
-        <h1>Search Scholarships</h1>
-        <form class="search-widget">
-            <input type="text" placeholder="Search for...">
-            <img src="img/search-button-overlay.svg" alt="search button" width="40vh">
-        </form>
-        <div class="search-list">
-            <div class="search-items">
-                <h3>Random List</h3>
-                <span>GOOGLE INC.</span>
-                <p>This is a very very long description about the regional science fair. This fair is one of the 
-                    most prestigious things you can join to boost your college application. However, it costs a 
-                    $500000 fee to join — a practice widely frowned upon.</p>
-                <div class="tags">
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
+        <div class="search-body">
+            <div class="search-filters">
+                <div class="filter-header">
+                    <h7 class="filter-title">Filter</h7>
+                    <button class="clear-filters">CLEAR</button>
+                </div>
+                <div class="filter-line"></div>
+                <div class="filter-content">
+                    <p class="filter-category">Grade</p>
+                    <div class="filter-item" style="margin-top: 10px;">
+                        <p>Grade 8</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Grade 9</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Grade 10</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Grade 11</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Grade 12</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>University</p>
+                        <div class="filter-check"></div>
+                    </div>
+                </div>
+                <div class="filter-content">
+                    <p class="filter-category">Area</p>
+                    <div class="filter-item" style="margin-top: 10px;">
+                        <p>Business</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Comp Sci</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Writing</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Science</p>
+                        <div class="filter-check"></div>
+                    </div>
+                </div>
+                <div class="filter-content">
+                    <p class="filter-category">Eligibility</p>
+                    <div class="filter-item" style="margin-top: 10px;">
+                        <p>US</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>Canada</p>
+                        <div class="filter-check"></div>
+                    </div>
+                    <div class="filter-item">
+                        <p>ALL</p>
+                        <div class="filter-check"></div>
+                    </div>
                 </div>
             </div>
-            <div class="search-items">
-                <h3>Random List</h3>
-                <span>GOOGLE INC.</span>
-                <p>This is a very very long description about the regional science fair. This fair is one of the 
-                    most prestigious things you can join to boost your college application. However, it costs a 
-                    $500000 fee to join — a practice widely frowned upon.</p>
-                <div class="tags">
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
+            <div class="search-list">
+                <div class="search-items">
+                    <h3 class="search-item-title"><a href="">Random List</a></h3>
+                    <span>GOOGLE INC.</span>
+                    <p>This is a very very long description about the regional science fair. This fair is one of the
+                        most prestigious things you can join to boost your college application. However, it costs a
+                        $500000 fee to join — a practice widely frowned upon.</p>
+                    <div class="tags">
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                    </div>
                 </div>
-            </div>
-            <div class="search-items">
-                <h3>Random List</h3>
-                <span>GOOGLE INC.</span>
-                <p>This is a very very long description about the regional science fair. This fair is one of the 
-                    most prestigious things you can join to boost your college application. However, it costs a 
-                    $500000 fee to join — a practice widely frowned upon.</p>
-                <div class="tags">
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
-                    <a href="" class="tag">modelling</a>
+                <div class="search-items">
+                    <h3 class="search-item-title"><a href="">Another List</a></h3>
+                    <span>GOOGLE INC.</span>
+                    <p>This is a very very long description about the regional science fair. This fair is one of the
+                        most prestigious things you can join to boost your college application. However, it costs a
+                        $500000 fee to join — a practice widely frowned upon.</p>
+                    <div class="tags">
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                    </div>
+                </div>
+                <div class="search-items">
+                    <h3 class="search-item-title"><a href="">Extra List</a></h3>
+                    <span>GOOGLE INC.</span>
+                    <p>This is a very very long description about the regional science fair. This fair is one of the
+                        most prestigious things you can join to boost your college application. However, it costs a
+                        $500000 fee to join — a practice widely frowned upon.</p>
+                    <div class="tags">
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                        <a href="" class="tag">modelling</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

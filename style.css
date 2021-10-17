@@ -179,18 +179,79 @@ form.search-widget input:focus {
 
 .search-container {
     padding-left: 1vw;
-    max-width: 600px;
-    width: 60vw;
+    max-width: 800px;
+    width: 80vw;
 }
 
-.search-container h1 {
+.search-head {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.search-head h1 {
     font-size: 1.4em;
-
+    width: 30%;
 }
 
-.search-container .search-widget input {
-    max-width: 650px;
-    width: 65vw;
+.search-head .search-widget {
+    margin-bottom: 10px;
+}
+
+.search-head .search-widget, .search-list {
+    width: 65%;
+}
+
+.clear-filters {
+    margin-left: 7vw;
+    padding-left: 5px;
+    border: none;
+    font-family: "Urbanist", sans-serif;
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+.filter-line {
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.filter-category {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.filter-item {
+    margin-bottom: 7px;
+    padding-left: 7px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-item p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.filter-check {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.search-filters {
+    width: 30%;
+}
+
+.search-body, .filter-header {
+    display: flex;
+    flex-direction: row;
 }
 
 .search-items {
