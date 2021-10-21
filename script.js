@@ -9,7 +9,7 @@ function search_bar() {
     a = title[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(input_value) > -1) {
-      item[i].style.display = "";
+      item[i].style.display = "block";
     } else {
       item[i].style.display = "none";
     }
@@ -17,12 +17,17 @@ function search_bar() {
 }
 
 function filter(filter_tag) {
-  var item, item_tag, tag_text;
+  var item, item_tag, tag_text, filter_on, filter_on_tag;
   item = document.querySelectorAll(".search-items");
+  filter_on = document.getElementsByClassName("filter-on");
+  filter_on_tag = [];
+  for (var i = 0; i < filter_on.length; i++) {
+    filter_on_tag.push(filter_on[i].alt);
+  }
 
-  if (filter_tag == "everything") {
+  if (filter_tag == "everything" || filter_on.length == 0) {
     for (var i = 0; i < item.length; i++) {
-      item[i].style.display = "";
+      item[i].style.display = "block";
     }
   } else {
     for (var i = 0; i < item.length; i++) {
@@ -30,15 +35,27 @@ function filter(filter_tag) {
       item_tag = item[i].querySelectorAll(".tag");
       for (var j = 0; j < item_tag.length; j++) {
         tag_text = item_tag[j].textContent || item_tag[i].innerText;
-        if (tag_text == filter_tag) {
+        if (filter_on_tag.includes(tag_text)) {
           contain_tag = true;
         }
       }
-      if (contain_tag) {
-        item[i].style.display = "";
-      } else {
-        item[i].style.display = "none";
-      }
+      item[i].style.display = (contain_tag) ? "block" : "none";
     }
+  }
+}
+
+function filter_mark(id) {
+  var filter_id, filter_check;
+  if (id == "everything") {
+    filter_check = document.querySelectorAll(".filter-check");
+    for (var i = 0; i < filter_check.length; i++) {
+      filter_check[i].style.display = "none";
+      filter_check[i].classList.remove("filter-on");
+    }
+  } else {
+    filter_id = document.querySelector(id);
+    filter_check = filter_id.querySelector("img");
+    filter_check.style.display = (filter_check.style.display == "block") ? "none" : "block";
+    (filter_check.style.display == "block") ? filter_check.classList.add("filter-on") : filter_check.classList.remove("filter-on");
   }
 }

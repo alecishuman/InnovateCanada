@@ -243,6 +243,13 @@ form.search-widget input:focus {
     height: 15px;
     background-color: white;
     border-radius: 50%;
+    border: 1px rgb(136, 136, 136) solid;
+}
+
+.filter-check img {
+    margin-left: 1.5px;
+    margin-top: 3.5px;
+    display: none;
 }
 
 .search-filters {
