@@ -24,7 +24,7 @@
 
     <div class="search-container">
         <div class="search-head">
-            <h1>Search Internships</h1>
+            <h1>Search Interships</h1>
             <form class="search-widget">
                 <input type="text" placeholder="Search for..." id="searchBar" onkeyup="search_bar()" autocomplete="off">
                 <img src="img/search-button-overlay.svg" alt="search button" width="40vh">
@@ -36,68 +36,82 @@
                 <div class="filter-header">
                     <h7 class="filter-title">Filter</h7>
                     <button class="clear-filters">
-                        <a href="" onclick="filter('everything')">CLEAR</a></button>
+                        <a href="" onclick="filter_mark('everything'); filter('everything');">CLEAR</a></button>
                 </div>
                 <div class="filter-line"></div>
                 <div class="filter-content">
                     <p class="filter-category">Grade</p>
                     <div class="filter-item" style="margin-top: 10px;">
                         <p>Grade 8</p>
-                        <a href="#" class="filter-check" onclick="filter('Grade 8')"></a>
+                        <a href="#" id="gr8" class="filter-check" onclick="filter_mark('#gr8'); filter('Grade 8');">
+                            <img src="img/Vector.svg" width="12px" alt="Grade 8">
+                        </a>
                     </div>
                     <div class="filter-item">
                         <p>Grade 9</p>
-                        <a href="#" class="filter-check" onclick="filter('Grade 9')"></a>
+                        <a href="#" id="gr9" class="filter-check" onclick="filter_mark('#gr9'); filter('Grade 9');">
+                        <img src="img/Vector.svg" width="12px" alt="Grade 9"></a>
                     </div>
                     <div class="filter-item">
                         <p>Grade 10</p>
-                        <a href="#" class="filter-check" onclick="filter('Grade 10')"></a>
+                        <a href="#" id="gr10" class="filter-check" onclick="filter_mark('#gr10'); filter('Grade 10');">
+                        <img src="img/Vector.svg" width="12px" alt="Grade 10"></a>
                     </div>
                     <div class="filter-item">
                         <p>Grade 11</p>
-                        <a href="#" class="filter-check" onclick="filter('Grade 11')"></a>
+                        <a href="#" id="gr11" class="filter-check" onclick="filter_mark('#gr11'); filter('Grade 11');">
+                        <img src="img/Vector.svg" width="12px" alt="Grade 11"></a>
                     </div>
                     <div class="filter-item">
                         <p>Grade 12</p>
-                        <a href="#" class="filter-check" onclick="filter('Grade 12')"></a>
+                        <a href="#" id="gr12" class="filter-check" onclick="filter_mark('#gr12'); filter('Grade 12');">
+                        <img src="img/Vector.svg" width="12px" alt="Grade 12"></a>
                     </div>
                     <div class="filter-item">
                         <p>University</p>
-                        <a href="#" class="filter-check" onclick="filter('University')"></a>
+                        <a href="#" id="university" class="filter-check" onclick="filter_mark('#university'); filter('University');">
+                        <img src="img/Vector.svg" width="12px" alt="University"></a>
                     </div>
                 </div>
                 <div class="filter-content">
                     <p class="filter-category">Area</p>
                     <div class="filter-item" style="margin-top: 10px;">
                         <p>Business</p>
-                        <a href="#" onclick="filter('Business')" class="filter-check"></a>
+                        <a href="#" id="business" onclick="filter('Business'); filter_mark('#business')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                     <div class="filter-item">
                         <p>Comp Sci</p>
-                        <a href="#" onclick="filter('Comp Sci')" class="filter-check"></a>
+                        <a href="#" id="comp_sci" onclick="filter('Comp Sci'); filter_mark('#comp_sci')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                     <div class="filter-item">
                         <p>Writing</p>
-                        <a href="#" onclick="filter('Writing')" class="filter-check"></a>
+                        <a href="#" id="writing" onclick="filter('Writing'); filter_mark('#writing')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                     <div class="filter-item">
                         <p>Science</p>
-                        <a href="#" onclick="filter('Science')" class="filter-check"></a>
+                        <a href="#" id="science" onclick="filter('Science'); filter_mark('#science')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                 </div>
                 <div class="filter-content">
                     <p class="filter-category">Eligibility</p>
                     <div class="filter-item" style="margin-top: 10px;">
                         <p>US</p>
-                        <a href="#" onclick="filter('US')" class="filter-check"></a>
+                        <a href="#" id="US" onclick="filter('US'); filter_mark('#US')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                     <div class="filter-item">
                         <p>Canada</p>
-                        <a href="#" onclick="filter('Canada')" class="filter-check"></a>
+                        <a href="#" id="canada" onclick="filter('Canada'); filter_mark('#canada')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                     <div class="filter-item">
                         <p>ALL</p>
-                        <a href="#" onclick="filter('ALL')" class="filter-check"></a>
+                        <a href="#" id="ALL" onclick="filter('ALL'); filter_mark('#ALL')" class="filter-check">
+                        <img src="img/Vector.svg" width="12px" alt=""></a>
                     </div>
                 </div>
             </div>
